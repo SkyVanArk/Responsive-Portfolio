@@ -10,7 +10,7 @@
 h1 {
 	position: absolute;
 	background-color: #4aaaa5;
-	width: 300px;
+	/*width: 300px;*/
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 200%;
 	color: white;
@@ -18,7 +18,7 @@ h1 {
 	text-align: center;
 	padding-top: 14px;
 	padding-bottom: 15px;
-	margin-left: 150px;
+	/*margin-left: 150px;*/
 }
 
 h2 {
@@ -69,6 +69,8 @@ header{
 
 }
 
+
+
 div.mainHeader{
 	background-color: #ffffff;
 	border: none;
@@ -84,13 +86,20 @@ h1.headerName{
 	text-align: center;
 	padding-top: 10px;
 	-webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-  float: left;
+  	float: left;
 }
+
+
 
 .inline{
 	display: inline;
+}
+
+.standardFont{
+	color: #777777;
+	line-height: 150%;
 }
 
 .navBar{
@@ -100,21 +109,23 @@ h1.headerName{
 
 a.navMenu{
 	margin: 10px;
-  padding-top: 10px;
-  top: 10%;
+  	padding-top: 10px;
+  	top: 10%;
 }
+
+a.navMenu:link{
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #fff;
+  color: #cccccc;
+  }
 
 a.border{
 	border-right: 1px solid;
-  border-left: 1px solid;
-  border-color: #cccccc;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.standardFont{
-	color: #777777;
-	line-height: 150%;
+  	border-left: 1px solid;
+  	border-color: #cccccc;
+  	padding-right: 20px;
+  	padding-left: 20px;
 }
 
 figure {
@@ -214,6 +225,10 @@ p {
 	width: 60px;
 	margin-left: 12px;
 	margin-right: 12px;
+}
+
+a.connectLink{
+	text-decoration: none;
 }
 
 footer {

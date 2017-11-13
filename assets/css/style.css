@@ -19,6 +19,7 @@ h1 {
 	padding-top: 14px;
 	padding-bottom: 15px;
 	/*margin-left: 150px;*/
+	left: 150px;
 }
 
 h2 {
@@ -105,6 +106,8 @@ h1.headerName{
 .navBar{
 	float: right;
 	margin-top: 20px;
+	position: absolute;
+	right: 180px
 }
 
 a.navMenu{
@@ -143,7 +146,6 @@ p {
 	font-size: 220%;
 	color: grey;
 }
-.bar
 
 .links {
 	float: right;
@@ -199,7 +201,7 @@ p {
 	left: 150px;
 	right: 200px;
 	width: 1000px;
-	height: 500px;
+
 	top: 50px;
 	background: white;
 	padding: 30px;
@@ -217,8 +219,8 @@ p {
     border-color:#CCCCCC;
     border-style: solid;
     position: relative;
-    left: 650px;
     top: 50px;
+    right: -650px;
 }
 
 .connect {
@@ -360,4 +362,58 @@ a.inline{
 	height: auto;
 	transition: .5s ease;
 	backface-visibility: hidden;
+}
+
+
+/*Here I tried to get the boxes to shrink together but I was having trouble getting the header to shrink appropriately*/
+@media only screen and (max-width: 1660px) {
+    p{
+   		font-size: 100%
+    }
+    .box-1 {
+    	width: 500px;
+    }
+    .box-2 {
+    	width: 200px;
+    	right: 300px;
+    }
+    .connect {
+    	width: 30px;
+    }
+}
+
+/*I had to add several more media queries than required to account for some mistakes I made in my original build*/
+@media only screen and (max-width: 1230px) {
+    .box-2 {
+    	width: 200px;
+    	right: 25px;
+    }
+    .navbar {
+    	clear: both;
+    }
+}
+
+@media only screen and (max-width: 938px) {
+   .navBar{
+	float: right;
+	margin-top: 20px;
+	position: absolute;
+	top: 50px;
+	/*margin: 20px 60px 20px 60px;*/
+	background-color: white;
+	left: 160px;
+}
+    .box-2 {
+    	position: relative;
+    	top: 700px;
+    	left: -300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+}
+@media only screen and (max-width: 640px) {
+
 }
